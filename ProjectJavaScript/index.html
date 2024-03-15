@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon/logo.png">
+    <title>Product Shop</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <div class="header">
+        <div class="tools"> 
+            <div class="search-product">
+                <label for="">Search</label>
+                <input type="text" id="search" placeholder="search product">
+            </div>
+             
+            <div class="sidebar">
+                <img src="/assets/shoppinCart/shopcart.jpg" width="30px" height="30px">
+                <ul id="cart"></ul>
+                <h3>Total: $<span id="total">0</span></h3>
+              </div>
+
+            <div class="filter-product">
+                <label for="">Category</label>
+                <select name="" id="select-category">
+                    <option value="electronic">Electronic</option>
+                    <option value="home">Home</option>
+                    <option value="pc">PC</option>
+                    <option value="music">Music</option>
+                    <option value="food">Food</option>
+                </select>
+            </div>
+            <div class="filter-product">
+                <label for="">Sort Price & Rating</label>
+                <select name="" id="select-price">
+                    <option value="hightolow">High to Low</option>
+                    <option value="lowtohigh">Low to High</option>
+                    <option value="rating">Rating</option>
+                </select>
+            </div>
+            <div class="filter-product">
+                <label for="">Sort Price Value</label>
+                <div class="range-slider">
+                    <input type="range" id="range">   
+                    <div class="values">
+                        <div class="value-unit">
+                            <label for="">Max</label>
+                            <input type="text" id="max">
+                        </div>
+                        <div class="value-unit">
+                            <label for="">Min</label>
+                            <input type="text" id="min">
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container"></div>
+    
+    <script src="./script/script.js"></script>
+</body>
+</html>
